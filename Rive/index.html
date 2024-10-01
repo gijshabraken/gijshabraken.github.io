@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rive Hello World</title>
+  </head>
+  <body style="height: 2000px;">
+    
+    <script src="https://unpkg.com/@rive-app/canvas@2.19.6"></script>
+    <canvas id="canvas" width="500" height="500" style="background-color: #cacaca; position: fixed; top: 10px; left: 10px;"></canvas>
+
+    <script>
+        const r = new rive.Rive({
+            src: "Make-it-Simple-001-peacock-logo-v1e.riv",
+            // OR the path to a discoverable and public Rive asset
+            // src: '/public/example.riv',
+            canvas: document.getElementById("canvas"),
+            autoplay: true,
+            artboard: "horizontal",
+            stateMachines: "ScrollingBehaviour",
+            onLoad: () => {
+              r.resizeDrawingSurfaceToCanvas();
+            },
+        });
+    </script>
+    
+  </body>
+</html>
