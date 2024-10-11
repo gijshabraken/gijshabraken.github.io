@@ -2,15 +2,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@splinetool/runtime@0.9.506/build/runtime.js"></script>
     </head>
     <body>
 
-        <div class="splinecontainer">
+        <canvas id="canvas3d"></canvas>
 
-            <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode"></spline-viewer>
-
-        </div>
+        <script>
+            const canvas = document.getElementById('canvas3d');
+            const spline = new window.spline.Application(canvas);
+            spline.load('scene-test.splinecode');
+          </script>
 
 </body>
 
