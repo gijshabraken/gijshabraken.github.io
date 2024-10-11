@@ -1,1 +1,0 @@
-Hello Git and GitHub, this is my learning environment.
