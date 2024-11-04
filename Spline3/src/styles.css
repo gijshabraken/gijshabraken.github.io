@@ -10,6 +10,23 @@ body {
   justify-content: center; 
 }
 
+
+.interactive {
+  height: 400px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
+}
+
+.foreground {
+  z-index: 2;
+} 
+
+.background {
+  z-index: 1;
+}
+
 .wrapper {
   width: 60vw;
 }
@@ -19,10 +36,3 @@ canvas {
   top: -100px;
 }
 
-.interactive {
-  height: 400px;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
-}
