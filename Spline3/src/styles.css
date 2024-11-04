@@ -6,16 +6,22 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center; 
 }
 
 .wrapper {
-  width: 80vw;
+  width: 60vw;
+}
+
+canvas {
+  position: relative;
+  top: -100px;
 }
 
 .interactive {
-  height: 50vh;
+  height: 400px;
+  overflow: hidden;
   width: 100%;
   height: auto;
   background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
