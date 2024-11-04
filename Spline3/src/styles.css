@@ -15,6 +15,7 @@ body {
 }
 
 .interactive {
+  height: 50vh;
   width: 100%;
   height: auto;
   background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
