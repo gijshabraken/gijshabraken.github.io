@@ -20,12 +20,12 @@ body {
 }
 
 .foreground {
-  position: relative;
+  position: absolute;
   z-index: 2;
 } 
 
 .background {
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 
