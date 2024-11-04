@@ -3,17 +3,15 @@ body {
 }
 html,
 body {
-  height: 100%;
-	overflow: hidden;
   font-family: verdana;
-  font-size: 16pt;
+  font-size: 24pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .wrapper {
-  display: flex;
   width: 80vw;
-  flex-direction: column;
-  justify-content: center; 
 }
 
 .interactive {
