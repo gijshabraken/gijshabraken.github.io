@@ -12,12 +12,10 @@ body {
 
 
 .interactive {
-  display: flex;
   height: 600px;
   overflow: hidden;
   width: 100%;
   background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
-  align-items: flex-start;
 }
 
 .foreground {
