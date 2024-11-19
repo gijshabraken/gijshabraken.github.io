@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <!-- Dit is test 11 -->
+    <canvas id="canvas" width="200" height="128"></canvas>
+
+    </div>
+    <!-- Dit is test 12 -->
 
     <div class="wrapper">
       <h1>Scroll naar beneden voor proef</h1>
@@ -106,6 +109,30 @@
         }
       }
     </script>
+
+    <!-- Rive script -->
+    <script>
+          const rive = require("@rive-app/canvas");
+
+          let stateMachineLoadInput;
+          const r = new rive.Rive({
+            src:
+              "src/peacock-logo-v1i.riv",
+            canvas: document.getElementById("canvas"),
+            stateMachines: "ScrollingBehaviour",
+            artboard: "horizontal",
+            autoplay: true,
+            layout: new rive.Layout({
+              fit: rive.Fit.FitWidth,
+              alignment: rive.Alignment.CenterLeft
+            }),
+            onLoad: () => {
+              stateMachineLoadInput = r.stateMachineInputs("ScrollingBehaviour")[0];
+              stateMachineLoadInput.value = 1;
+            }
+          });
+    </script> 
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
