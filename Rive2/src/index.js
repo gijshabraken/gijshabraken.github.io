@@ -1,4 +1,6 @@
-const rive = require("https://unpkg.com/@rive-app/canvas@2.7.0");
+
+
+const rive = import * as rive from "https://unpkg.com/@rive-app/canvas@2.7.0";
 
 let stateMachineLoadInput;
 const r = new rive.Rive({
