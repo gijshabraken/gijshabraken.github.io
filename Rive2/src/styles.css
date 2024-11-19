@@ -1,0 +1,48 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+  width: 100%;
+  background: radial-gradient(circle at 0 0,#05000b 0,#060615 25%,#103f6b 50%,#a61e5e 100%);
+}
+
+.foreground {
+  position: relative;
+  top: -600px;
+  z-index: 2;
+  width: 50%;
+  max-height: 100%;
+  color: white;
+} 
+
+.background {
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 40vw;
+}
+
+canvas {
+  position: relative;
+  top: -400px;
+}
+
+
