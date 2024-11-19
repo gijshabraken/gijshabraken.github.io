@@ -40,9 +40,11 @@ body {
   width: 40vw;
 }
 
-canvas {
-  position: relative;
-  top: -400px;
+#canvas {
+  height: 64px;
+  position: fixed;
+  top: 100px;
+  width: calc(100% - 16px);
 }
 
 
