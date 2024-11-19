@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <canvas id="canvas" width="200" height="128"></canvas>
+    <!-- het rive canvas-->
+    <canvas id="rivecanvas" width="200" height="128"></canvas>
 
     </div>
     <!-- Dit is test 12 -->
@@ -118,7 +119,7 @@
           const r = new rive.Rive({
             src:
               "src/peacock-logo-v1i.riv",
-            canvas: document.getElementById("canvas"),
+            canvas: document.getElementById("rivecanvas"),
             stateMachines: "ScrollingBehaviour",
             artboard: "horizontal",
             autoplay: true,
