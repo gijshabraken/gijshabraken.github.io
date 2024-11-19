@@ -6,7 +6,7 @@ let stateMachineLoadInput;
 const r = new rive.Rive({
   src:
     "peacock-logo-v1i.riv",
-  canvas: document.getElementById("rivecanvas"),
+  canvas: document.getElementById("canvas"),
   stateMachines: "ScrollingBehaviour",
   artboard: "horizontal",
   autoplay: true,
